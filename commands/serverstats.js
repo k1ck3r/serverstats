@@ -15,7 +15,7 @@ if(!message.guild.me.hasPermission(`MANAGE_CHANNELS`)) return message.channel.se
 	const totalsize = message.guild.memberCount;
 	const botsize = message.guild.members.filter(m => m.user.bot).size;
 	const humansize = totalsize - botsize;
-message.guild.createChannel('📈Server Statistics📈', 'category', [{
+message.guild.createChannel('📊Server Stats📊', 'category', [{
   id: message.guild.id,
   deny: ['CONNECT']
 }]).then(channel => {
