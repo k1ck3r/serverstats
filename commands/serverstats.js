@@ -59,7 +59,7 @@ if(totusers === null || membcount === null || botcount === null) return message.
 serverstats.delete(`Stats_${message.guild.id}`)
 message.channel.send({embed: {
  color: 3447003,
- description: `:white_check_mark: Serverstats disabled for this server. }`
+ description: `:white_check_mark: Serverstats disabled for this server. }`)
 }
 }
 }
